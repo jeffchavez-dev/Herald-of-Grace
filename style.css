@@ -290,9 +290,8 @@ blockquote {
     margin: .5rem auto;
     box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
     transition: .3s ease-in-out;
-    opacity: .7;
 }
-.ministry-block::after {
+/* .ministry-block::after {
     content: "";
     background-color: black;
     position: absolute;
@@ -301,7 +300,7 @@ blockquote {
     right: 0;
     left: 0;
     opacity: .7;
-}
+} */
 
 .ministry-block::after:hover {
     opacity: .1;
@@ -309,6 +308,7 @@ blockquote {
 
 .ministry-block img {
     width: 100%;
+    opacity: .5;
 }
 
 .ministry-description {
@@ -325,4 +325,8 @@ blockquote {
     transform: scale(1.05);
     opacity: 1;
     font-size: 1.2rem;
+}
+
+.ministry-block img:hover {
+    opacity: .8;
 }
