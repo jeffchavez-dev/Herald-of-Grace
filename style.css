@@ -153,6 +153,7 @@ main::before {
     .main-banner {
         font-size: 1rem;
     }
+
 }
 
 .main-shape-divider-bottom {
@@ -242,6 +243,8 @@ blockquote {
     padding: .2rem;
 }
 
+
+
 .ministries {
     background-image: url(/assets/book-g1b36c3777_1920.jpg);
     background-position: center;
@@ -329,4 +332,11 @@ blockquote {
 
 .ministry-block img:hover {
     opacity: .8;
+}
+
+@media only screen and (max-width: 700px) {
+    
+    body {
+        line-height: 1.2;
+    }
 }
