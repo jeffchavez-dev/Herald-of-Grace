@@ -27,6 +27,8 @@ header {
    flex-direction: row;
    justify-content: center;
    align-items: center;
+   color: white;
+    z-index: 9999;
 }
 
 
@@ -55,11 +57,13 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    
 }
 
 .menu ul li a {
     text-decoration: none;
     padding: .5em;
+    color: white;
 }
 
 .btn {
@@ -69,8 +73,59 @@ header {
 }
 
 main {
-    height: 80vh;
+    position: relative;
+    height: 100vh;
     background-image: url("/assets/HGCBCC\ 1.jpg");
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main::before {
+    content: "";
+    background-color: green;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .2;
+    z-index: 1;
+}
+
+.main-banner {
+    height: 50%;
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 9999;
+}
+.custom-shape-divider-bottom-1665803749 {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    margin-top: -3.8em;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1665803749 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 62px;
+}
+
+.custom-shape-divider-bottom-1665803749 .shape-fill {
+    fill: #fff;
 }
