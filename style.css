@@ -225,7 +225,7 @@ blockquote {
 }
 .ministry-block::after {
     content: "";
-    background-color: green;
+    background-color: black;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -240,6 +240,7 @@ blockquote {
 
 .ministry-description {
     position: absolute;
+    width: 100%;
     top: 50%;
     margin: auto;
     z-index: 999;
