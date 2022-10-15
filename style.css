@@ -67,6 +67,12 @@ header {
     font-size: .8rem;
 }
 
+@media only screen and (max-width: 600px) {
+	.menu ul li {
+        display: none;
+    }
+}
+
 .btn {
     cursor: pointer;
     margin-right: .5rem;
