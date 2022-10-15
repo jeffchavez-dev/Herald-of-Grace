@@ -246,6 +246,8 @@ blockquote {
     background-image: url(/assets/book-g1b36c3777_1920.jpg);
     background-position: center;
     background-size: cover;
+    margin-block: 5rem;
+    padding: 2rem;
 
 }
 
@@ -273,15 +275,22 @@ blockquote {
 .section-shape-divider-top .shape-fill {
     fill: #fff;
 }
+
+
 .ministries h2 {
     text-align: center;
+    color: white;
 }
 .ministry-block {
     position: relative;
+    height: 300px;
     width: 300px;
     max-width: 80%;
     text-align: center;
     margin: .5rem auto;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
+    transition: .3s ease-in-out;
+    opacity: .7;
 }
 .ministry-block::after {
     content: "";
@@ -291,8 +300,12 @@ blockquote {
     bottom: 0;
     right: 0;
     left: 0;
-    opacity: .5;
+    opacity: .7;
 }
+
+.ministry-block::after:hover {
+    opacity: .1;
+} 
 
 .ministry-block img {
     width: 100%;
@@ -306,4 +319,10 @@ blockquote {
     padding: .5rem;
     z-index: 999;
     color: white;
+}
+
+.ministry-block:hover {
+    transform: scale(1.05);
+    opacity: 1;
+    font-size: 1.2rem;
 }
