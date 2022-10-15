@@ -22,6 +22,7 @@ h1, h2, h3 {
 
 .section-heading {
     font-size: 2rem;
+    margin-block: 3rem;
 }
 .container {
     margin: 0 auto;
@@ -154,7 +155,7 @@ main::before {
     }
 }
 
-.custom-shape-divider-bottom-1665803749 {
+.main-shape-divider-bottom {
     z-index: 999;
     position: relative;
     background-size: cover;
@@ -168,14 +169,14 @@ main::before {
     transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1665803749 svg {
+.main-shape-divider-bottom svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
     height: 62px;
 }
 
-.custom-shape-divider-bottom-1665803749 .shape-fill {
+.main-shape-divider-bottom .shape-fill {
     fill: #fff;
 }
 
@@ -241,6 +242,11 @@ blockquote {
     padding: .2rem;
 }
 
+.ministries {
+    background-image: url(/assets/bible-gba9b6408c_1920.jpg);
+    background-position: center;
+    background-size: contain;
+}
 .ministries h2 {
     text-align: center;
 }
