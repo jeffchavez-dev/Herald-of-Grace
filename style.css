@@ -1,7 +1,27 @@
+:root {
+    --clr-primary: white;
+    --clr-secondary: green;
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-accent: 'Playfair display', serif;
+}
+
 *, *::after, *::before {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+body {
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: var(--ff-primary);
+}
+
+.section-heading {
+    font-size: 2rem;
 }
 .container {
     margin: 0 auto;
@@ -118,6 +138,11 @@ main::before {
     z-index: 9999;
     margin-top: 2rem;
 }
+.main-banner h1 {
+    font-size: 3rem;
+    font-weight: 1000;
+    line-height: 1;
+}
 
 @media only screen and (max-width: 700px) {
 	.menu ul li {
@@ -216,12 +241,15 @@ blockquote {
     padding: .2rem;
 }
 
+.ministries h2 {
+    text-align: center;
+}
 .ministry-block {
     position: relative;
     width: 300px;
     max-width: 80%;
     text-align: center;
-    margin: .5rem;
+    margin: .5rem auto;
 }
 .ministry-block::after {
     content: "";
@@ -243,6 +271,7 @@ blockquote {
     width: 100%;
     top: 50%;
     margin: auto;
+    padding: .5rem;
     z-index: 999;
     color: white;
 }
