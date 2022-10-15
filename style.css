@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -76,11 +76,6 @@ header {
     font-size: .8rem;
 }
 
-@media only screen and (max-width: 700px) {
-	.menu ul li {
-        display: none;
-    }
-}
 
 .btn {
     cursor: pointer;
@@ -117,10 +112,23 @@ main::before {
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
+    align-self: flex-start;
     z-index: 9999;
+    margin-top: 2rem;
 }
+
+@media only screen and (max-width: 700px) {
+	.menu ul li {
+        display: none;
+    }
+
+    .main-banner {
+        font-size: 1rem;
+    }
+}
+
 .custom-shape-divider-bottom-1665803749 {
     z-index: 999;
     position: relative;
@@ -146,6 +154,10 @@ main::before {
     fill: #fff;
 }
 
+.main-banner .join-btn {
+    margin-top: 1rem;
+}
+
 /* buttons */
 
 .live-btn {
@@ -162,22 +174,44 @@ main::before {
 .join-btn {
     padding: 1em;
     font-size: 1.2rem;
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+.btn:hover {
+    opacity: .8;
 }
 
 /* ministry  section */
 
+.ministry-section {
+    margin: 2rem 0;
+}
+
+.quote-section {
+    margin: 2rem;
+}
 blockquote {
     font-size: 2rem;
-    margin: 2rem;
+    margin-bottom: 1rem;
     
 }
 
 .section {
     width: 400px;
     max-width: 80%;
-    color: rgb(83, 79, 79)
+    color: rgb(83, 79, 79);
+    margin: 1rem;
 }
 
 .schedule-section {
     font-size: 1.2rem;
+}
+.schedule-section h2, .schedule-section h3 {
+    margin: 1rem 0;
+}
+.schedule-section li {
+    list-style-type: none;
+    padding: .2rem;
 }
