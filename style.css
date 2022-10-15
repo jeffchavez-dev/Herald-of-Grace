@@ -280,6 +280,7 @@ blockquote {
 .ministries h2 {
     text-align: center;
     color: white;
+    margin-bottom: 1rem;
 }
 .ministry-block {
     position: relative;
@@ -323,7 +324,6 @@ blockquote {
 
 .ministry-block:hover {
     transform: scale(1.05);
-    opacity: 1;
     font-size: 1.2rem;
 }
 
