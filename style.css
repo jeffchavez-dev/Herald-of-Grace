@@ -145,3 +145,8 @@ main::before {
     color: #fff;
     border: none;
 }
+
+.join-btn {
+    padding: 1em;
+    font-size: 1.2rem;
+}
