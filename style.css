@@ -215,3 +215,33 @@ blockquote {
     list-style-type: none;
     padding: .2rem;
 }
+
+.ministry-block {
+    position: relative;
+    width: 300px;
+    max-width: 80%;
+    text-align: center;
+    margin: .5rem;
+}
+.ministry-block::after {
+    content: "";
+    background-color: green;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: .5;
+}
+
+.ministry-block img {
+    width: 100%;
+}
+
+.ministry-description {
+    position: absolute;
+    top: 50%;
+    margin: auto;
+    z-index: 999;
+    color: white;
+}
