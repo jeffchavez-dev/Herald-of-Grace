@@ -22,7 +22,7 @@ h1, h2, h3 {
 
 .section-heading {
     font-size: 2rem;
-    margin-block: 3rem;
+    margin-block: 5rem;
 }
 .container {
     margin: 0 auto;
@@ -243,9 +243,35 @@ blockquote {
 }
 
 .ministries {
-    background-image: url(/assets/bible-gba9b6408c_1920.jpg);
+    background-image: url(/assets/book-g1b36c3777_1920.jpg);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
+
+}
+
+
+.section-shape-divider-top {
+    z-index: 999;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    margin-bottom: -8.8em;
+}
+
+.section-shape-divider-top svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 62px;
+}
+
+.section-shape-divider-top .shape-fill {
+    fill: #fff;
 }
 .ministries h2 {
     text-align: center;
